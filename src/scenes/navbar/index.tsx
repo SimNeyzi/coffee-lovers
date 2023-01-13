@@ -7,7 +7,13 @@ function Navbar({}: Props) {
   const FlexBetween = "flex items-center justify-between";
   return (
     <nav>
-      <div className={`${FlexBetween} fixed top-0 z-30 w-full py-6`}></div>
+      <div className={`${FlexBetween} fixed top-0 z-30 w-full py-6`}>
+        <div className={`${FlexBetween} mx-auto w-5/6`}>
+          <div className={`${FlexBetween} w-full gap-16`}>
+            <div>Logo</div>
+          </div>
+        </div>
+      </div>
     </nav>
   );
 }
